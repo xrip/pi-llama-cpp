@@ -15,6 +15,7 @@ A [Pi Coding Agent](https://pi.dev/) extension that integrates with running [lla
 - **Basic llama-swap support** — auto-detects and provides basic integration with [llama-swap](https://github.com/mostlygeek/llama-swap) gateways
 - **Thinking budget support** — configurable token budgets for model reasoning/thinking, mapped to Pi's thinking levels
 - **Real-time progress tracking** — live loading progress via SSE (falls back to polling)
+- **No caching of one-off prompts** — compaction and branch-summary requests (Pi's `cacheRetention: "none"`) send `cache_prompt: false`
 
 ### Status Indicators
 

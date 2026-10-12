@@ -9,6 +9,7 @@ import type { SortBy } from "../interfaces/sortBy";
 import { BaseModel } from "../models/baseModel";
 import { Server } from "../server";
 import { authRequiredMessage } from "../ui/strings";
+import { streamSimple } from "../utils/cachePrompt";
 import type { LlamaSettingsManager } from "./settings";
 
 /** Model-list comparator: negative if a sorts first, positive if b does. */
@@ -161,6 +162,7 @@ export class ServerManager {
       api: API_TYPE,
       apiKey,
       models: modelConfigs,
+      streamSimple,
     });
   }
 

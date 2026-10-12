@@ -73,6 +73,7 @@ describe("ServerManager", () => {
         api: "openai-completions",
         apiKey: "key-1",
         models: [{ id: "test-model" }],
+        streamSimple: expect.any(Function),
       },
     );
     expect(mockPi.registerProvider).toHaveBeenCalledWith(
@@ -83,6 +84,7 @@ describe("ServerManager", () => {
         api: "openai-completions",
         apiKey: "key-2",
         models: [{ id: "test-model" }],
+        streamSimple: expect.any(Function),
       },
     );
   });
